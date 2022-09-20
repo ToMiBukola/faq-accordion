@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) ;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow: hidden; */
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 70px 60px;
+    background-image: url(images/illustration-woman-online-desktop.svg), url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -11% 50%, 1330% -302px;
+    max-width: 930px;
+    width: 90%;
+}
+.image {
+    position: relative;
+}
+/* .lady {
+    position: absolute;
+    bottom: -80px;
+    left: -85px;
+} */
+.woman {
+    display: none;
+}
+.box {
+    position: relative;
+    top: 60px;
+    right: 125px;
+    z-index: 6;
+}
+.faq {
+    width: 40%;
+    /* overflow: auto;
+    height: 400px; */
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+/* a:hover {
+    font-weight: 700;
+} */
+.ans {
+    display: none;
+}
+.que {
+    border-bottom: 1px solid #80808070;
+}
+.icon1 {
+    padding-left:  15px;
+}
+.icon2 {
+    padding-left:  16px;
+}
+.icon3 {
+    padding-left:  75px;
+}
+.icon4 {
+    padding-left:  72px;
+}
+.icon5 {
+    padding-left:  38px;
+}
+.show {
+    display: block;
+}
+.active {
+    font-weight: 700;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+
+@media (max-width:1300px) {
+    .arrow {
+        padding-left: 0;
+    }
+    .section {
+        width: 80%;
+    }
+}
+
+@media (max-width:1185) {
+    .section {
+        background-size: 65%;
+    }
+}
+
+@media (max-width:1110px) {
+    .section {
+        background-size: 58%;
+        background-position: -11% 50%;
+    }
+    .arrow {
+        padding-left: 0;
+    }
+    .icon1 {
+        padding-left: 40px;
+    }
+    .icon2 {
+        padding-left: 43px;
+    }
+    .icon3 {
+        padding-left: 105px;
+    }
+    .icon4 {
+        padding-left: 105px;
+    }
+    .icon5 {
+        padding-left: 70px;
+    }
+}
+
+@media (max-width:890px) {
+    body {
+        padding-top: 80px;
+    }
+    .section {
+        flex-direction: column;
+        background-image: none;
+        padding: 25px;
+        width: 60%;
+    }
+    .woman {
+        display: block;
+        position: absolute;
+        height: 255px;
+        right: -170px;
+        top: -200px;
+    }
+    .box {
+       display: none;
+    }
+    .faq {
+        width: 100%;
+        padding: 25px 0;
+    }
+    h1 {
+        text-align: center;
+        padding-top: 30px;
+    }
+    /* .icon1 {
+        padding-left: 40px;
+    }
+    .icon2 {
+        padding-left: 43px;
+    }
+    .icon3 {
+        padding-left: 105px;
+    }
+    .icon4 {
+        padding-left: 105px;
+    }
+    .icon5 {
+        padding-left: 70px;
+    } */
+}
+
+@media (max-width:555px) {
+    .section {
+        width: 80%;
+    }
+}
